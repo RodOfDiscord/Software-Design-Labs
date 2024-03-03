@@ -10,6 +10,7 @@
   - [Dependency Inversion](#dependency-inversion)
 - [DRY](#dry)
 - [Composition Over Inheritance](#composition-over-inheritance)
+- [Diagram](#diagram)
 
 ## SOLID
 
@@ -262,3 +263,7 @@ public class Warehouse
     //...
 }
 ```
+
+## Diagram
+
+![diagram](./diagram.png)

@@ -2,8 +2,8 @@
 
 ## Old LightHTML
 
-![old](/resources/old.png)
+![old](../resources/old.png)
 
 ## New LightHTML
 
-![new](/resources/new.png)
+![new](../resources/new.png)

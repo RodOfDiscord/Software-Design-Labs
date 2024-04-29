@@ -13,6 +13,7 @@
             TagName = tagName;
             TagType = tagType;
             IsPaired = isPaired;
+            OnCreated();
         }
 
         public int CountNodes()
@@ -27,6 +28,7 @@
 
         public void RemoveNode(LightNode node)
         {
+            OnRemoved();
             nodes.Remove(node);
         }
 
@@ -37,6 +39,8 @@
             {
                 inner += node.GetOuterHTML();
             }
+
+            OnTextRendered();
             return inner;
         }
 
@@ -50,7 +54,23 @@
                 outer += node.GetOuterHTML();
             outer += $"</{TagName}>";
 
+            OnTextRendered();
             return outer;
+        }
+
+        protected override void OnCreated()
+        {
+            Console.WriteLine($"Element {TagName} was created" );
+        }
+
+        protected override void OnRemoved()
+        {
+            Console.WriteLine($"Child element was removed from {TagName}");
+        }
+
+        protected override void OnTextRendered()
+        {
+            Console.WriteLine("Text was rendered");
         }
     }
 }

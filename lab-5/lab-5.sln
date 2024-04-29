@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightHTML", "LightHTML\LightHTML.csproj", "{3D125083-9FD0-4765-937F-E7882537C6F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightHTML", "LightHTML\LightHTML.csproj", "{3D125083-9FD0-4765-937F-E7882537C6F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodDemo", "TemplateMethodDemo\TemplateMethodDemo.csproj", "{7CD94439-BC71-48A8-A872-31D4F8273393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethodDemo", "TemplateMethodDemo\TemplateMethodDemo.csproj", "{7CD94439-BC71-48A8-A872-31D4F8273393}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorDemo", "IteratorDemo\IteratorDemo.csproj", "{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7CD94439-BC71-48A8-A872-31D4F8273393}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD94439-BC71-48A8-A872-31D4F8273393}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD94439-BC71-48A8-A872-31D4F8273393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

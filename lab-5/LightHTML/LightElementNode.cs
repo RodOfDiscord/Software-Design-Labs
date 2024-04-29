@@ -32,6 +32,11 @@
             nodes.Remove(node);
         }
 
+        public List<LightNode> GetNodes()
+        {
+            return nodes;
+        }
+
         public override string GetInnerHTML()
         {
             string inner = string.Empty;
@@ -70,7 +75,7 @@
 
         protected override void OnTextRendered()
         {
-            Console.WriteLine("Text was rendered");
+           Console.WriteLine("Text was rendered");
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace LightHTML
+﻿using LightHTML.visitor;
+
+namespace LightHTML
 {
     public class LightTextNode : LightNode
     {
@@ -30,6 +32,11 @@
         protected override void OnTextRendered()
         {
             Console.WriteLine("Text was rendered");
+        }
+
+        public override void Accept(INodeVisitor visitor)
+        {
+            visitor.Visit(this);
         }
     }
 }

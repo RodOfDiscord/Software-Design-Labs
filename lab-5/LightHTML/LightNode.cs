@@ -1,4 +1,6 @@
-﻿namespace LightHTML
+﻿using LightHTML.visitor;
+
+namespace LightHTML
 {
     public abstract class LightNode
     {
@@ -8,5 +10,7 @@
         protected virtual void OnCreated() { }
         protected virtual void OnRemoved() { }
         protected virtual void OnTextRendered() { }
+
+        public abstract void Accept(INodeVisitor visitor);
     }
 }

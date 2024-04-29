@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightHTML", "LightHTML\Ligh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethodDemo", "TemplateMethodDemo\TemplateMethodDemo.csproj", "{7CD94439-BC71-48A8-A872-31D4F8273393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorDemo", "IteratorDemo\IteratorDemo.csproj", "{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorDemo", "IteratorDemo\IteratorDemo.csproj", "{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorDemo", "VisitorDemo\VisitorDemo.csproj", "{68C5EBCF-84B7-4E3B-8B9E-188D0E5DDB3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F90EB24-9B0C-4DD2-BF9D-57BDAA613967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C5EBCF-84B7-4E3B-8B9E-188D0E5DDB3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C5EBCF-84B7-4E3B-8B9E-188D0E5DDB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C5EBCF-84B7-4E3B-8B9E-188D0E5DDB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C5EBCF-84B7-4E3B-8B9E-188D0E5DDB3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

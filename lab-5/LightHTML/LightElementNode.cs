@@ -1,4 +1,6 @@
-﻿namespace LightHTML
+﻿using LightHTML.visitor;
+
+namespace LightHTML
 {
     public class LightElementNode : LightNode
     {
@@ -65,7 +67,7 @@
 
         protected override void OnCreated()
         {
-            Console.WriteLine($"Element {TagName} was created" );
+            Console.WriteLine($"Element {TagName} was created");
         }
 
         protected override void OnRemoved()
@@ -75,7 +77,12 @@
 
         protected override void OnTextRendered()
         {
-           Console.WriteLine("Text was rendered");
+            Console.WriteLine("Text was rendered");
+        }
+
+        public override void Accept(INodeVisitor visitor)
+        {
+            visitor.Visit(this);
         }
     }
 }

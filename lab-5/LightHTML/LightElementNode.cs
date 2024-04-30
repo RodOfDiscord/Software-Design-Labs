@@ -1,4 +1,5 @@
-﻿using LightHTML.visitor;
+﻿using LightHTML.state;
+using LightHTML.visitor;
 
 namespace LightHTML
 {
@@ -83,6 +84,18 @@ namespace LightHTML
         public override void Accept(INodeVisitor visitor)
         {
             visitor.Visit(this);
+        }
+
+        public void Click()
+        {
+            state.OnClick();
+            CSSClasses.Add("highlight");
+            ChangeState(new Disabled());
+        }
+
+        public void Hover()
+        {
+            state.OnHover();
         }
     }
 }
